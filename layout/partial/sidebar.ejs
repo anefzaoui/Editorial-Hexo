@@ -1,10 +1,20 @@
 <!-- Sidebar -->
 <div id="sidebar">
   <div class="inner">
+    <% if (theme.widgets.search) { %>
     <%- partial('partial/sidebar/search') %>
+    <% } %>
+    <% if (theme.widgets.menu) { %>
       <%- partial('partial/sidebar/menu') %>
-        <%- partial('partial/sidebar/articles') %>
-          <%- partial('partial/sidebar/getintouch') %>
-            <%- partial('partial/footer') %>
+    <% } %>
+    <% if (theme.widgets.articles) { %>
+    <%- partial('partial/sidebar/articles') %>
+    <% } %>
+    <% if (theme.widgets.getintouch) { %>
+    <%- partial('partial/sidebar/getintouch') %>
+    <% } %>
+    <% if (theme.widgets.footer) { %>
+    <%- partial('partial/footer') %>
+    <% } %>
   </div>
 </div>

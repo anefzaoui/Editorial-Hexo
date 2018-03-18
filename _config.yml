@@ -1,25 +1,34 @@
 # Theme version
-editorial: "1.0"
+editorial:        "1.0"
 
 # Header Elements
-favicon: /favicon.png
+favicon:          /favicon.png
 
+# Sidebar Widgets
+# Those widgets reside in /layout/partial/sidebar/
+# Their control code is in /layout/partial/sidebar.ejs
+widgets:
+  search:         true
+  menu:           true
+  articles:       true
+  getintouch:     true
+  footer:         true
 
 # Menu Elements
 menu:
-  Home: /
-  About Ahmed: /about/
-  Contact Me: /contact/
-  Archives: /archives/
+  Home:           /
+  About Ahmed:    /about/
+  Contact Me:     /contact/
+  Archives:       /archives/
 
-# RSS
-rss: /atom.xml
 
 # Social media links
-facebook_url: https://facebook.com/anefzaoui1
-twitter_url: https://twitter.com/AhmedNefzaoui
+twitter_url:      https://twitter.com/AhmedNefzaoui
+facebook_url:     https://facebook.com/anefzaoui1
+snapchat_url:
+instagram_url:
+medium_url:
 google_plus_url:
-
 
 # Analytics
 google_analytics:
