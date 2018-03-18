@@ -1,15 +1,15 @@
 <!-- Menu -->
 <nav id="menu">
-	<header class="major">
-		<h2>Lookin' around</h2>
-	</header>
-	<ul>
-		<% for (var i in theme.menu){ %>
-			<li>
-				<a href="<%- url_for(theme.menu[i]) %>">
-					<%= i %>
-				</a>
-			</li>
-			<% } %>
-	</ul>
+  <header class="major">
+    <h2>Lookin' around</h2>
+  </header>
+  <ul>
+    <% for (var i in theme.menu){ %>
+      <li>
+        <a href="<%- url_for(theme.menu[i]) %>">
+          <%= i %>
+        </a>
+      </li>
+      <% } %>
+  </ul>
 </nav>
