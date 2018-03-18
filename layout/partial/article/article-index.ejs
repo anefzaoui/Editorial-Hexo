@@ -1,0 +1,25 @@
+<%
+var isFullUrl = function(str) {
+  return /^(https:|http:|ftp:)?\/\//.test(str);
+};
+%>
+<article>
+  <% if (item.photos.length) { %>
+    <% var thumb = item.photos[0]; %>
+    <% var thumbUrl = isFullUrl(thumb) ? thumb : url_for(thumb) %>
+    <a class="image" href="<%- config.root %><%- item.path %>">
+      <img src="<%- thumbUrl %>" alt="<%- item.title %>"/>
+    </a>
+  <% } %>
+  <h3><%- item.title || "Untitled" %></h3>
+
+  <p>
+    <%= item.date.format(config.date_format) %>&nbsp;|&nbsp;
+    <% if (item.excerpt){ %>
+        <%- item.excerpt %>
+    <% } %>
+  </p>
+  <ul class="actions">
+    <li><a href="<%- config.root %><%- item.path %>" class="button">More</a></li>
+  </ul>
+</article>

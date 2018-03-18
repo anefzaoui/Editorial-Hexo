@@ -1,12 +1,24 @@
 <!-- Section -->
 <section>
   <header class="major">
-    <h2>Get in touch</h2>
+    <% if (theme.contact.title) { %>
+      <h2><%- theme.contact.title -%></h2>
+    <% }  else { %>
+      <h2>Get In Touch</h2>
+    <% } %>
   </header>
-  <p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
+  <% if (theme.contact.message) { %>
+    <p><%- theme.contact.message -%></p>
+  <% } %>
   <ul class="contact">
-    <li class="fa-envelope-o"><a href="#">information@untitled.tld</a></li>
-    <li class="fa-phone">(000) 000-0000</li>
-    <li class="fa-home">1234 Somewhere Road #8254<br /> Nashville, TN 00000-0000</li>
+    <% if (theme.contact.email) { %>
+    <li class="fa-envelope-o"><a href="#"><%- theme.contact.email -%></a></li>
+    <% } %>
+    <% if (theme.contact.phone) { %>
+    <li class="fa-phone"><%- theme.contact.phone -%></li>
+    <% } %>
+    <% if (theme.contact.address) { %>
+    <li class="fa-home"><%- theme.contact.address -%></li>
+    <% } %>
   </ul>
 </section>

@@ -1,4 +1,8 @@
 <!-- Footer -->
 <footer id="footer">
-  <p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+  <span><%- config.title %> &copy; <%= (new Date()).getFullYear() %></span>
+  <% if(config.footer !== null) { %>
+    <span class="split">|</span>
+    <span><%- config.footer || theme.footer %></span>
+  <% } %>
 </footer>

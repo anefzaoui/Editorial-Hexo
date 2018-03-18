@@ -14,12 +14,27 @@ widgets:
   getintouch:     true
   footer:         true
 
-# Menu Elements
+# Widgets Configuration
+
+## Menu Widget
 menu:
-  Home:           /
-  About Ahmed:    /about/
-  Contact Me:     /contact/
-  Archives:       /archives/
+  title:          Menu
+  items:
+    Home:         /
+    About Ahmed:  /about/
+    Contact Me:   /contact/
+    Archives:     /archives/
+
+## Contact Widget
+contact:
+  title:          Drop me a message
+  message:        Don't hesitate to drop me a message. Seriously. I reply to all of them. 🤷‍♂️
+  email:          hi@nef.im
+  phone:          (00216) 99 999 999
+  address:        Certain place in the world<br/>Not here.
+
+## Footer Widget
+footer:           Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/anefzaoui/Editorial-Hexo" target="_blank">Editorial</a>
 
 
 # Social media links
