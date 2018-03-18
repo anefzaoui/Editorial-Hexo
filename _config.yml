@@ -1,0 +1,27 @@
+# Theme version
+editorial: "1.0"
+
+# Header Elements
+favicon: /favicon.png
+
+
+# Menu Elements
+menu:
+  Home: /
+  About Ahmed: /about/
+  Contact Me: /contact/
+  Archives: /archives/
+
+# RSS
+rss: /atom.xml
+
+# Social media links
+facebook_url: https://facebook.com/anefzaoui1
+twitter_url: https://twitter.com/AhmedNefzaoui
+google_plus_url:
+
+
+# Analytics
+google_analytics:
+fb_admins:
+fb_app_id:
